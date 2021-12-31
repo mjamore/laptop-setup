@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Agree to xcode license
-sudo xcodebuild -license accept
+# Setup Xcode
+chmod u+x ./scripts/xcode.sh && ./scripts/xcode.sh
 
 # Install applications
 chmod u+x ./scripts/install-apps.sh && ./scripts/install-apps.sh
@@ -9,8 +9,11 @@ chmod u+x ./scripts/install-apps.sh && ./scripts/install-apps.sh
 # Mac OS configuration
 chmod u+x ./scripts/macos.sh && ./scripts/macos.sh
 
-# Terminal configuration
-chmod u+x ./scripts/terminal-config.sh && ./scripts/terminal-config.sh
+# Git configuration
+chmod u+x ./scripts/git-config.sh && ./scripts/git-config.sh
 
 # VS Code configuration
 chmod u+x ./scripts/vs-code-config.sh && ./scripts/vs-code-config.sh
+
+# symlink it up!
+chmod u+x ./scripts/symlink-setup.sh && ./scripts/symlink-setup.sh
