@@ -69,3 +69,9 @@ brew install --cask copyclip
 ## Show hidden files
 defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
+
+
+## Set git configuration
+git config --global user.name "Michael Amore"
+git config --global user.email "michael.amore@yahoo.com"
+git config --global core.editor "code --wait"
