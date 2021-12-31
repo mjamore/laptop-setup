@@ -1,77 +1,66 @@
-## Agree to xcode license
-sudo xcodebuild -license accept
+#!/usr/bin/env bash
 
-## Install homebrew
+# Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-## Install Chrome
+# Install Chrome
 brew install --cask google-chrome
 
-## Install Firefox
+# Install Firefox
 brew install --cask firefox
 
-## Install VSCode
+# Install VSCode
 brew install --cask visual-studio-code
 
-## Install Slack
+# Install Slack
 brew install --cask slack
 
-## Install Discord
+# Install Discord
 brew install --cask discord
 
-## Install Git
+# Install Git
 brew install git
 
-## Install Docker
+# Install Docker
 brew install docker
 brew install --cask docker
 
-## AWS CLI
+# AWS CLI
 brew install awscli
 
-## Install MySQL
+# Install MySQL
 brew install mysql
 brew install --cask mysqlworkbench
 
-## Install Redis
+# Install Redis
 brew install redis
 
-## Install Postman
+# Install Postman
 brew install --cask postman
 
-## Install Nodejs
+# Install Nodejs
 brew install node
 
-## Install nvm
+# Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-## Install Flutter
+# Install Flutter
 brew install --cask flutter
 
-## Install React Native CLI
+# Install React Native CLI
 brew install react-native-cli
 
-## Install Wireshark
+# Install Wireshark
 brew install --cask wireshark
 
-## Install iTerm2
+# Install iTerm2
 brew install --cask iterm2
 
-## Install Audacity
+# Install Audacity
 brew install --cask audacity
 
-## Install CopyClip
+# Install CopyClip
 brew install --cask copyclip
 
-
-
-
-## Show hidden files
-defaults write com.apple.Finder AppleShowAllFiles true
-killall Finder
-
-
-## Set git configuration
-git config --global user.name "Michael Amore"
-git config --global user.email "michael.amore@yahoo.com"
-git config --global core.editor "code --wait"
+## Install Rectangle (window management application)
+brew install --cask rectangle

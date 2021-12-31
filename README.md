@@ -10,7 +10,7 @@ This repo serves 2 primary purposes:
 3. Install the following from the Mac App Store
   - Xcode
   - Medis
-4. Run setup-script.sh
+4. Run setup-new-machine.sh
 5. Add/remove apps from dock
 6. Add VSCode extensions
   - 
