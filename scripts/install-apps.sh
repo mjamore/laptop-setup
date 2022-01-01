@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Install latest version of bash
+brew install bash
+
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -20,6 +23,8 @@ brew install --cask discord
 
 # Install Git
 brew install git
+# better diffs - https://github.com/dandavison/delta
+brew install git-delta
 
 # Install Docker
 brew install docker
@@ -62,5 +67,35 @@ brew install --cask audacity
 # Install CopyClip
 brew install --cask copyclip
 
-## Install Rectangle (window management application)
+# Install Rectangle (window management application)
 brew install --cask rectangle
+
+# Install bat - https://github.com/sharkdp/bat
+brew install bat
+
+# Install exa - better 'ls' - https://github.com/ogham/exa
+brew install exa
+
+# Install fzf - terminal fuzzy find - https://github.com/junegunn/fzf
+brew install fzf
+
+# Install z - https://github.com/rupa/z
+brew install z
+
+# Install bash autocompletion
+brew install bash-completion@2
+
+# linting for .sh files
+brew install shellcheck
+
+# Audio/video utils and conversion tool - https://ffmpeg.org/
+brew install ffmpeg
+
+# Install wget
+brew install wget
+
+# Install more recent versions of some OS X tools
+brew install vim
+brew install nano
+brew install grep
+brew install openssh

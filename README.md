@@ -36,6 +36,7 @@ This repo serves 2 primary purposes:
   - Medis (Redis client)
   - Homebrew
   - git
+    - git-delta
   - Docker
   - AWS CLI
   - MySQL
@@ -49,6 +50,10 @@ This repo serves 2 primary purposes:
   - Wireshark
   - iTerm2
   - CopyClip
+  - Terminal:
+    - exa
+    - bat
+    - fzf
 
 
 ## Configuration

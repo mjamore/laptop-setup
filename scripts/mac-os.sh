@@ -93,6 +93,9 @@ defaults write com.apple.Finder AppleShowAllFiles true
 # See: https://security.stackexchange.com/a/47786/8918
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
+# Set default shell to Bash
+chsh -s /bin/bash
+
 
 ###############################################################################
 # TextEdit                                                                    #
@@ -130,6 +133,14 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 # Start CopyClip on startup
 defaults write com.fiplab.copyclip2 StartAtLogin -bool true
+
+
+###############################################################################
+# Rectangle                                                                   #
+###############################################################################
+
+# Start Rectangle on startup
+defaults write com.knollsoft.Rectangle StartAtLogin -bool true
 
 
 

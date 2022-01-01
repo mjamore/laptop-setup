@@ -7,7 +7,7 @@ chmod u+x ./scripts/xcode.sh && ./scripts/xcode.sh
 chmod u+x ./scripts/install-apps.sh && ./scripts/install-apps.sh
 
 # Mac OS configuration
-chmod u+x ./scripts/macos.sh && ./scripts/macos.sh
+chmod u+x ./scripts/mac-os.sh && ./scripts/mac-os.sh
 
 # Git configuration
 chmod u+x ./scripts/git-config.sh && ./scripts/git-config.sh
