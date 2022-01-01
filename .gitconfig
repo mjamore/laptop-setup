@@ -30,6 +30,7 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 	precomposeUnicode = true
+	editor = code --wait
 
 [pager]
 	# or not... # insanely beautiful diffs ==> npm install -g diff-so-fancy
@@ -136,3 +137,6 @@
 	showPatch = true
 [log]
 	date = relative
+[user]
+	email = michael.amore@yahoo.com
+	name = Michael Amore
