@@ -10,6 +10,7 @@ bindkey -v
 fpath=( "$HOME/.zfunctions" $fpath )
 
 # antigen time!
+curl -L git.io/antigen > antigen.zsh
 source ~/code/antigen/antigen.zsh
 
 ######################################################################

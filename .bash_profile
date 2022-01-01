@@ -7,10 +7,10 @@ for file in ~/.{bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
-# to help sublimelinter etc with finding my PATHS
-case $- in
-   *i*) source ~/.extra
-esac
+# # to help sublimelinter etc with finding my PATHS
+# case $- in
+#    *i*) source ~/.extra
+# esac
 
 # generic colouriser
 GRC=`which grc`

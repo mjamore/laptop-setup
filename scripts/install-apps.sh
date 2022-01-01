@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
+# Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# (Optionally) Turn off brew's analytics https://docs.brew.sh/Analytics
+brew analytics off
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
 
 # Install latest version of bash
 brew install bash
 
-# Install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+brew install moreutils
 
 # Install Chrome
 brew install --cask google-chrome
@@ -99,3 +111,6 @@ brew install vim
 brew install nano
 brew install grep
 brew install openssh
+
+# Install antigen for zshell
+curl -L git.io/antigen > antigen.zsh
