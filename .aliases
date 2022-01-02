@@ -90,7 +90,8 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 alias aliases='code ~/.aliases'
 
 # MJA aliases
-alias ll='ls -lahG ${colorflag}'
+alias ll='exa --long --header --group --color=always --all --git'
+alias lll='ls -lahG ${colorflag}'
 alias sourcebp='source ~/.bash_profile'
 alias profile='code ~/.bash_profile'
 alias dotfiles='code ~'
