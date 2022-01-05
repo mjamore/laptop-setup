@@ -8,7 +8,7 @@ function gc() {
 	fi
 
 
-	if [ $@ == "" ] ; then
+	if [ -n $@ ] ; then
 		echo "You supplied an empty string. Changes have not been committed. Try again."
 	else
 		# run git commit using the prefix from the curren tbranch
