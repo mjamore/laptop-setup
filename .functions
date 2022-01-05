@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# git commit shortcut using branch prefix from the current branch
+function gc() {
+	# if there is no argument passed in, notify the caller
+	if [ $# -eq 0 ] ; then
+		echo "You need to supply a commit message, bro."
+	fi
+
+
+	if [ $@ == "" ] ; then
+		echo "You supplied an empty string. Changes have not been committed. Try again."
+	else
+		# run git commit using the prefix from the curren tbranch
+		BRANCH_PREFIX=$(git symbolic-ref HEAD --short | cut -d"-" -f 1)
+		git commit -m "$BRANCH_PREFIX | $@"
+	fi
+}
+
 # Create a new directory and enter it
 function md() {
 	mkdir -p "$@" && cd "$@"
@@ -178,7 +195,7 @@ shellswitch () {
 
 # initialize nvm
 function nv () {
-	export NVM_DIR="/Users/paulirish/.nvm"
+	export NVM_DIR="/Users/michaelamore/.nvm"
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 }
 

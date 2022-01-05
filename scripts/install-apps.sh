@@ -114,3 +114,9 @@ brew install openssh
 
 # Install antigen for zshell
 curl -L git.io/antigen > antigen.zsh
+
+
+# Global npm installs
+npm i -g nodemon
+npm i -g serve
+npm install -g statikk
