@@ -140,3 +140,5 @@
 [user]
 	email = michael.amore@yahoo.com
 	name = Michael Amore
+[init]
+	defaultBranch = main

@@ -34,6 +34,9 @@ defaults write com.apple.BezelServices kDim -bool true
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
 
+# Don't rearrange spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
 
 ###############################################################################
 # Finder                                                                      #

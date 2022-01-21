@@ -105,3 +105,12 @@ alias pull="git pull"
 alias push="git push"
 alias glb='git checkout -'
 alias cb='git symbolic-ref --quiet --short HEAD 2> /dev/null || git describe --all --exact-match HEAD 2> /dev/null || git rev-parse --short HEAD 2> /dev/null || echo 'unknown' | pbcopy'
+
+# I can never remember where the VSCode config file is; no longer!
+alias codeconfig="code '/Users/michaelamore/Library/Application Support/Code/User/settings.json'"
+
+
+# npm script shortcut
+alias dev="npm run dev"
+alias start="npm run start"
+alias ios="npm run ios"

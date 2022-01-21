@@ -112,6 +112,12 @@ brew install nano
 brew install grep
 brew install openssh
 
+# Install Watchman for watching file system changes in React Native
+brew install watchman
+
+# Install Cocoapods
+brew install cocoapods
+
 # Install antigen for zshell
 curl -L git.io/antigen > antigen.zsh
 
