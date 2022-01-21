@@ -113,4 +113,5 @@ alias codeconfig="code '/Users/michaelamore/Library/Application Support/Code/Use
 # npm script shortcut
 alias dev="npm run dev"
 alias start="npm run start"
+alias test="npm run test"
 alias ios="npm run ios"
