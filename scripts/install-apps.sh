@@ -112,11 +112,17 @@ brew install nano
 brew install grep
 brew install openssh
 
+# ExifTool for stripping metadata from images
+brew install exiftool
+
 # Install Watchman for watching file system changes in React Native
 brew install watchman
 
 # Install Cocoapods
 brew install cocoapods
+
+# NoSQL Client for DynamoDB
+brew install --cask nosql-workbench
 
 # Install antigen for zshell
 curl -L git.io/antigen > antigen.zsh

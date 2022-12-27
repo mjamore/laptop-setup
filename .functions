@@ -11,9 +11,10 @@ function gc() {
 	if [ -n $@ ] ; then
 		echo "You supplied an empty string. Changes have not been committed. Try again."
 	else
-		# run git commit using the prefix from the curren tbranch
-		BRANCH_PREFIX=$(git symbolic-ref HEAD --short | cut -d"-" -f 1)
-		git commit -m "$BRANCH_PREFIX | $@"
+		# run git commit using the prefix from the current tbranch
+		# BRANCH_PREFIX=$(git symbolic-ref HEAD --short | cut -d"-" -f 1)
+		# git commit -m "$BRANCH_PREFIX | $@"
+		git commit -m "$@"
 	fi
 }
 

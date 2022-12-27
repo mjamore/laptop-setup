@@ -104,3 +104,4 @@ source ~/.bash_profile
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH=/Users/michaelamore/.meteor:$PATH
