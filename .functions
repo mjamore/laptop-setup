@@ -3,19 +3,14 @@
 # git commit shortcut using branch prefix from the current branch
 function gc() {
 	# if there is no argument passed in, notify the caller
-	if [ $# -eq 0 ] ; then
-		echo "You need to supply a commit message, bro."
-	fi
+	[ $# -eq 0 ] &&	echo "You need to supply a commit message, bro." && return 1;
 
-
-	if [ -n $@ ] ; then
-		echo "You supplied an empty string. Changes have not been committed. Try again."
-	else
-		# run git commit using the prefix from the current tbranch
-		# BRANCH_PREFIX=$(git symbolic-ref HEAD --short | cut -d"-" -f 1)
-		# git commit -m "$BRANCH_PREFIX | $@"
-		git commit -m "$@"
-	fi
+	[[ -z "$@" ]] && echo "You supplied an empty string. Changes have not been committed. Try again." && return 1;
+	
+	# run git commit using the prefix from the current tbranch
+	# BRANCH_PREFIX=$(git symbolic-ref HEAD --short | cut -d"-" -f 1)
+	# git commit -m "$BRANCH_PREFIX | $@"
+	git commit -m "$@"
 }
 
 # Create a new directory and enter it
