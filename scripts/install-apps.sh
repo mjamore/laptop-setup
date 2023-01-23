@@ -2,6 +2,8 @@
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+source ~/.bash_profile
+
 # (Optionally) Turn off brew's analytics https://docs.brew.sh/Analytics
 brew analytics off
 
@@ -19,16 +21,16 @@ brew install coreutils
 brew install moreutils
 
 # Install Chrome
-brew install --cask google-chrome
+# brew install --cask google-chrome
 
 # Install Firefox
 brew install --cask firefox
 
 # Install VSCode
-brew install --cask visual-studio-code
+# brew install --cask visual-studio-code
 
 # Install Slack
-brew install --cask slack
+# brew install --cask slack
 
 # Install Discord
 brew install --cask discord
@@ -62,19 +64,19 @@ brew install node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # Install Flutter
-brew install --cask flutter
+# brew install --cask flutter
 
 # Install React Native CLI
-brew install react-native-cli
+# brew install react-native-cli
 
 # Install Wireshark
 brew install --cask wireshark
 
 # Install iTerm2
-brew install --cask iterm2
+# brew install --cask iterm2
 
 # Install Audacity
-brew install --cask audacity
+# brew install --cask audacity
 
 # Install CopyClip
 brew install --cask copyclip
@@ -116,7 +118,7 @@ brew install openssh
 brew install exiftool
 
 # Install Watchman for watching file system changes in React Native
-brew install watchman
+# brew install watchman
 
 # Install Cocoapods
 brew install cocoapods

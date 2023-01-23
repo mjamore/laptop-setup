@@ -2,17 +2,17 @@
 This repo serves 2 primary purposes:
   - Document all of the user preferences, configurations, applications, etc. that I like and want setup on any new machine I use
   - Provide a script that I can run when I get a new machine to automate as much of the setup process as possible.
+  - Single source of truth for my dotfiles that be synced across all my machines setup using symlinks
 
 
 ## Steps to Follow:
-1. Setup System Preferences (Or use Migration Assistant app)
-2. Customize Finder Preferences
-3. Install the following from the Mac App Store
-  - Xcode
-  - Medis
-4. Run setup-new-machine.sh
-5. Add/remove apps from dock
-6. Add VSCode extensions
+1. <a href="https://www.google.com/chrome/">Download Chrome</a>
+2. Use Terminal to clone this repo
+3. Run setup-new-machine.sh
+4. Setup System Preferences (Or use Migration Assistant app)
+5. Customize Finder Preferences
+6. Add/remove apps from dock
+7. Add VSCode extensions
   - 
 
 
@@ -54,8 +54,3 @@ This repo serves 2 primary purposes:
     - exa
     - bat
     - fzf
-
-
-## Configuration
-  - Dotfiles (need to create dotfiles repo)
-  - Github ssh key

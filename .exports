@@ -10,13 +10,8 @@ export LANG="en_US"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# here's LS_COLORS
-# github.com/trapd00r/LS_COLORS
-command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
-eval "$(gdircolors -b ~/.dircolors)"
-
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/bin
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
