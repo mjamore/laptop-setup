@@ -42,6 +42,9 @@ defaults write com.apple.dock mru-spaces -bool false
 # Finder                                                                      #
 ###############################################################################
 
+# Finder: default all views to column view
+defaults write com.apple.Finder FXPreferredViewStyle clmv
+
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
@@ -80,6 +83,7 @@ defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.Dock autohide-delay -float 0
 
 # Add iOS Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app" "/Applications/iOS Simulator.app"
