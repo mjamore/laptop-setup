@@ -12,8 +12,6 @@ This repo serves 2 primary purposes:
 4. Setup System Preferences (Or use Migration Assistant app)
 5. Customize Finder Preferences
 6. Add/remove apps from dock
-7. Add VSCode extensions
-  - 
 
 
 ## Applications

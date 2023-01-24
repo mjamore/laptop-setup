@@ -21,16 +21,16 @@ brew install coreutils
 brew install moreutils
 
 # Install Chrome
-# brew install --cask google-chrome
+brew install --cask google-chrome
 
 # Install Firefox
 brew install --cask firefox
 
 # Install VSCode
-# brew install --cask visual-studio-code
+brew install --cask visual-studio-code
 
 # Install Slack
-# brew install --cask slack
+brew install --cask slack
 
 # Install Discord
 brew install --cask discord
@@ -73,10 +73,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 brew install --cask wireshark
 
 # Install iTerm2
-# brew install --cask iterm2
+brew install --cask iterm2
 
 # Install Audacity
-# brew install --cask audacity
+brew install --cask audacity
 
 # Install CopyClip
 brew install --cask copyclip
