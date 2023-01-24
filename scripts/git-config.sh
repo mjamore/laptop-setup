@@ -11,3 +11,9 @@ git config protocol.version 2
 
 # autocompletion for git branch names https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
 brew install bash-completion
+
+## Use 'main' as the default branch name
+git config --global init.defaultBranch main
+
+## Use SSH instead of HTTPS
+git config --global url."ssh://git@github.com".insteadOf "https://github.com" || true

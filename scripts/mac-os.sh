@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# https://gist.github.com/CvX/6069760
+# https://www.defaults-write.com/
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -9,6 +12,66 @@ sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+###############################################################################
+# General System Settings                                                     #
+###############################################################################
+
+# Dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
+
+# Use AirDrop over every interface.
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Set language and text formats
+defaults write NSGlobalDomain AppleLanguages -array "en" "pl"
+defaults write NSGlobalDomain AppleLocale -string "en_PL"
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+
+
+###############################################################################
+# Menu Bar Settings                                                           #
+###############################################################################
+
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+
+
+
+###############################################################################
+# Battery Power Settings                                                      #
+###############################################################################
+
+# Display sleep: 5 min
+sudo pmset -b displaysleep 5
+
+# Computer sleep: 20 min
+sudo pmset -b sleep 20
+
+
+
+###############################################################################
+# Power Adapter Settings                                                      #
+###############################################################################
+
+# Display sleep: 15 min
+sudo pmset -c displaysleep 15
+
+# Computer sleep: 30 min
+sudo pmset -c sleep 30
+
+
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -31,6 +94,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
+
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
 
@@ -44,6 +108,9 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Finder: default all views to column view
 defaults write com.apple.Finder FXPreferredViewStyle clmv
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -66,15 +133,14 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Use column view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
-
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+# Group windows by application in Mission Control
+defaults write com.apple.dock expose-group-apps -bool true
 
 
 ###############################################################################
@@ -114,6 +180,9 @@ defaults write com.apple.TextEdit RichText -int 0
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
+# Display HTML files as HTML code instead of formatted text in TextEdit
+defaults write com.apple.TextEdit IgnoreHTML -bool true
+
 
 ###############################################################################
 # Photos                                                                      #
@@ -121,6 +190,18 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+
+###############################################################################
+# Safari                                                                      #
+###############################################################################
+
+# Set up Safari for development.
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 
 ###############################################################################
