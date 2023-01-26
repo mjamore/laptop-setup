@@ -10,8 +10,8 @@ export LANG="en_US"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/bin
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
