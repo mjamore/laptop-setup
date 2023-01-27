@@ -70,3 +70,7 @@ alias ios="npm run ios"
 alias clean="npm run clean"
 
 alias go="npm run dev"
+
+# for byc-lead-processing repo
+alias rt="cd ~/git/kbb/byc/aws/byc-lead-processing"
+alias vs="cd ~/git/kbb/byc/aws/byc-lead-processing/src/projects/lead-vendor-services/lambdas/vendor-services-processor/src"

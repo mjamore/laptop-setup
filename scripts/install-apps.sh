@@ -112,7 +112,6 @@ brew install wget
 brew install vim
 brew install nano
 brew install grep
-brew install openssh
 
 # ExifTool for stripping metadata from images
 brew install exiftool
